@@ -15,13 +15,13 @@ export const siteConfig: SiteConfig = {
     fixed: false,     // Hide the theme color picker for visitors
   },
   banner: {
-    enable: false,
-    src: 'assets/images/YumeYuka.jpg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+    enable: true,
+    src: 'assets/images/刻晴.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    position: 'top',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
-      enable: false,         // Display the credit text of the banner image
-      text: '',              // Credit text to be displayed
-      url: ''                // (Optional) URL link to the original artwork or artist's page
+      enable: true,         // Display the credit text of the banner image
+      text: '刻晴—樱花树下/Keqing',              // Credit text to be displayed
+      url: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3384083852'                // (Optional) URL link to the original artwork or artist's page
     }
   },
   toc: {
@@ -56,6 +56,11 @@ export const profileConfig: ProfileConfig = {
   bio: '梦——それは现実の続き； 现実——それは梦の终わり.',
   links: [
     {
+      name: 'GitHub',
+      icon: 'fa6-brands:github',
+      url: 'https://github.com/YumeYuka',
+    },
+    {
       name: 'QQ',
       icon: 'fa6-brands:qq',
       url: 'https://qm.qq.com/q/wxE5SNyX5u',
@@ -64,11 +69,6 @@ export const profileConfig: ProfileConfig = {
       name: 'QQ',
       icon: 'fa6-solid:envelope',
       url: 'mailto:acofork@foxmail.com',
-    },
-    {
-      name: 'GitHub',
-      icon: 'fa6-brands:github',
-      url: 'https://github.com/YumeYuka',
     },
   ],
 }
